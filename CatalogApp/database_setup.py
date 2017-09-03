@@ -59,7 +59,8 @@ class Item(Base):
 
 
 #engine = create_engine('postgresql:///itemcatalogwithusers.db')
-engine = create_engine('postgresql://catalog:catalog@13.126.197.223:80/itemcatalogwithusers.db')
+engine = create_engine('postgresql://catalog:catalog@localhost:80/itemcatalogwithusers.db')
+#engine = create_engine('postgresql://catalog:catalog@13.126.197.223:80/itemcatalogwithusers.db')
 #engine = create_engine('sqlite:///itemcatalogwithusers.db')
 
 
