@@ -4,5 +4,5 @@ import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/CatalogApp/")
 
-from FlaskApp import app as application
-application.secret_key = 'grader'
+from CatalogApp import app as application
+#application.secret_key = 'grader'
