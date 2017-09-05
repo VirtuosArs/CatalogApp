@@ -5,5 +5,6 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/CatalogApp/")
 
 from CatalogApp import app as application
+application.secret_key = 'super_secret_key'
 #from CatalogApp import catalogapp as application
 #application.secret_key = 'grader'
