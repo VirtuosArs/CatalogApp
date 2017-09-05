@@ -562,5 +562,5 @@ def clearSession():
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
-    #app.run(host='13.126.197.223', port=80)
-    app.run()
+    app.run(host='13.126.197.223', port=80)
+    #app.run()
