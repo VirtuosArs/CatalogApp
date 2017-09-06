@@ -30,13 +30,9 @@ You will need Git to install the configuration for the VM. If you'd like to lear
 
 From the terminal, run:
 
-    git clone https://github.com/VirtuosArs/ARS_ItemCatalog.git arsItemCatalog
+    git clone https://github.com/VirtuosArs/CatalogApp.git
 
-This will give you a directory named **arsItemCatalog** complete with the source code. 
-
-## Run the virtual machine!
-
-Using the terminal, change directory to oauth (**cd arsItemCatalog**), then type **vagrant up** to launch your virtual machine.
+This will give you a directory named **CatalogApp** complete with the source code. 
 
 
 ## About the Project
