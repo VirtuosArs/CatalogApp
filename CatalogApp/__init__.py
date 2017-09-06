@@ -430,7 +430,7 @@ def deleteCategory(category_id):
 def showItemDetails(category_id, item_id):
     itemDetails = session.query(Item).filter_by(id=item_id).one()
     if 'username' not in login_session:
-        return render_template('publicitemDetails.html', item_id=item_id,
+        return render_template('publicItemDetails.html', item_id=item_id,
                                item_details=itemDetails)    
     else:
         return render_template(
@@ -560,12 +560,8 @@ def clearSession():
 
 
 if __name__ == '__main__':
-    if login_session['user_id'] != category.user_id:
-        app = Flask(__name__)
-        app.secret_key = 'super_secret_key'
-    else:
-        app.secret_key = 'super_secret_key'
-    #app.secret_key = 'super_secret_key'
+    app = Flask(__name__)
+    app.secret_key = 'super_secret_key'
     app.debug = True
     app.run(host='0.0.0.0', port=8000)
     #app.run()
