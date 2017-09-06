@@ -560,8 +560,12 @@ def clearSession():
 
 
 if __name__ == '__main__':
-    app = Flask(__name__)
-    app.secret_key = 'super_secret_key'
+    if login_session['user_id'] != category.user_id:
+        app = Flask(__name__)
+        app.secret_key = 'super_secret_key'
+    else:
+        app.secret_key = 'super_secret_key'
+    #app.secret_key = 'super_secret_key'
     app.debug = True
     app.run(host='0.0.0.0', port=8000)
     #app.run()
